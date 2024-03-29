@@ -1,0 +1,37 @@
+<!-- 2)- Implemente um sistema Web que receba o nome do atleta e sua faixa etária em uma TAG <select> e o sistema deverá informar a categoria do atleta. Nessa TAG <selec.t. deverá ter os seguintes itens /opções: Abaixo de 14 anos; Entre 14 e 15 anos; Entre 16 e 17 anos; De 18 à 20 anos; Acima de 20 anos. Após o usuário digitar o nome do atleta e selecionar uma opção na TAG <select>, o usuário deverá clicar em um botão e o sistema deverá informar o nome do atleta e em qual categoria o atleta se enquadra, de acordo com a tabela seguinte:
+- Abaixo de 14 anos -mirim; 
+- Entre 14 e 15 anos – infantil; 
+- Entre 16 e 17 anos – juvenil; 
+- De 18 à 20 anos – juniores; 
+- Acima de 20 anos – profissional.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Exercício 02</title>
+    </head>
+    <body>
+        <h1>Exercício 02</h1>
+        <div class="container">
+        <label>
+            <h3>Digite seu nome:</h3>
+            <input type="text" id="nome" class="texto">
+        </label>
+        <select id="idade">
+            <option>Escolha sua idade</option>
+            <option>Abaixo de 14 anos</option>
+            <option>Entre 14 e 15 anos</option>
+            <option>Entre 16 e 17 anos</option>
+            <option>De 18 a 20 anos</option>
+            <option>Acima de 20 anos</option>
+        </select>
+        <input type="button" onclick="calcular()" value="Categoria" class="btn">
+        <input type="button" onclick="limpar()" value="Limpar" class="btn">
+        <div id="resp" class="resposta"></div>
+        <script src="exercicio02.js"></script>
+        <footer><footer>Desenvolvido por Matheus Teixeira, ©Copyright </footer></footer>
+        </div>
+    </body>
+</html>
