@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Exercícios camisetas</title>
+    </head>
+    <body>
+        <h1>Exercício Camiseta</h1> 
+        <div class="container_header">
+                <input type="button" value="<" onclick="voltar()" />
+                <img id="camiseta" src="camiseta1.frente.jpg" width="120" class="seta">
+                <input type="button" value=">" onclick="avancar()" />         
+            </div>
+        <div class="btn">
+            <div class="cor azul" onclick="azul()"></div>
+            <div class="cor branca" onclick="branca()"></div>
+        </div>
+        <div class="container">
+        <div id="resp" class="resposta"></div>
+        <img id="bermudas" src="bermudas.jpg" width="200" onclick="bermuda()">
+        <img id="camisas" src="camisetas.jpg" width="200" onclick="camisa()">  
+        </div>
+        <script src="exercicio.js"></script>
+
+    </body>
+</html>
