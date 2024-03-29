@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            //Declare variáveis com os valores de 2 nottas, calcule e mostre a média delas
+            var nota1 = 80;
+            var nota2 = 90;
+            var media = (parseInt(nota1) + parseInt(nota2))/2
+            window.alert ("A média das notas foram: " + media);
+            document.write("<h1>Média das notas do aluno:</h1>");
+            document.write("A média das notas foram: " + media);
+            document.write("<hr></hr>");
+
+            //Declare variáveis com o nome de uma pessoa e seu ano de nascimento. Mostre o seu nome e sua idade(considere que ela já fez aniversário neste ano).
+            var nome = "Matheus";
+            var anonnascimento = 1994;
+            var idade = (parseInt(2023) - parseInt(anonnascimento));
+            window.alert ("O nome é " +nome + " e a idade é " +idade);
+            document.write("<h1> Nome e idade de um aluno: </h1>");
+            document.write("O nome é " +nome + " e a idade é " +idade);
+            document.write("<hr></hr>");
+
+            //Declare variáveis para armazenar o preço e a quantidade de um produto. Mostre o valor total.
+            var preco = 100;
+            var quantidade = 8;
+            var total = (preco * quantidade);
+            window.alert ("O valor total é: R$" + total.toFixed(2));
+
+            //Declare variáveis para armazenar a altura e o peso de uma pessoa. Mostre o seu IMC sabendo-se que o IMC é igual à peso/altura ² .
+            var altura = 1.70;
+            var peso = 75;
+            var imc = peso/(altura **2);
+            window.alert ("Seu IMC é: " +imc);
+
+        </script>
+    </body>
+</html>

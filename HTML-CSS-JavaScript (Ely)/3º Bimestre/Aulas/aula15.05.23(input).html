@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <title>Somando Valores</title>
+    </head>
+    <body>
+        <h1>Exemplo de Formulário:</h1>
+        <b>Primeiro Número:</b>
+        <input type="number" id="txtn1"/>
+        <br/><br/>
+        <b>Segundo Número:</b>
+        <input type="number" id="txtn2"/>
+        <br/><br/>
+        <input type="button" value="ok" onclick="calcular()"/>
+        <input type="button" value="limpar" onclick="limpar()"/>
+        <br/><br/>
+        <b><div id="resp"></div></b>
+    </body>
+    <script>
+        function calcular(){
+            // pega os documentos do HTML
+            var txtn1 = document.getElementById ("txtn1");
+            var txtn2 = document.getElementById ("txtn2");
+            var resp = document.getElementById ("resp");
+            // pega os valores digitados pelo usuário
+            var n1 = parseInt(txtn1.value);
+            var n2 = parseInt(txtn2.value);
+            // faz o cálculo
+            soma = n1 + n2;
+            // exibe o resultado
+            resp.innerHTML = "Soma: " + soma;
+        }
+        function limpar(){
+            // pega os documentos do HTML
+            var txtn1 = document.getElementById ("txtn1");
+            var txtn2 = document.getElementById ("txtn2");
+            var resp = document.getElementById ("resp");
+            // limpa os campos
+            txtn1.value = "";
+            txtn2.value = "";
+            resp.innerHTML = "";
+            // coloca o foco no input
+            txtn1.focus()
+
+
+
+        }
+
+
+    </script>
+</html>

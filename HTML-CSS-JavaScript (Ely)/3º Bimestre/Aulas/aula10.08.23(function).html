@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Exemplo de Evento</title>
+    </head>
+    <body>
+        <div id="valor">????</div>
+        <div onclick="evento()">Clique Aqui</div>
+        <div onclick="eventoazul()">Azul</div>
+        <script>
+            function eventoazul() {
+                document.getElementById("valor").style.background = "blue";
+            }
+            
+            function evento() {
+                var x = 20;
+                document.getElementById("valor").innerHTML=x;
+                //altera a cor de fundo
+                document.getElementById("valor").style.background = "red";
+            }
+        </script>
+    </body>
+</html>

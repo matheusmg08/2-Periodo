@@ -1,0 +1,37 @@
+<!-- 
+    1- Peça para o usuário digitar 2 notas. Calcule e mostre a média delas.
+    2- Peça para o usuário digital a largura e altura de um retangulo. Calcule e mostre sua área (largura * altura)
+    3- Peça para o usuário digitar o nome de uma pessoa e seu ano de nascimento. Mostre uma mensagem semelhante a esta: "
+    Olá Fulano, você tem 25 anos", sendo que Fulano foi o nome que o usuário digitou e 25 é a sua idade calculada.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Exercício</title>
+    </head>
+    <body>
+        Primeiro Exercício:<br/>
+        Primeiro Nota:
+        <input type="number" id="texto1"><br/>
+        Segundo Nota:
+        <input type="number" id="texto2"><br/>
+        <input type="button" value="Ok" onclick="calcular()"/>
+        <input type="button" value="Limpar" onclick="limpar()"/>
+        <br/><br>
+        Média:
+        <div id="resposta1"></div>
+    </body>
+    <script>
+        function calcular (){
+            var texto1 = document.getElementById("texto1");
+            var texto2 = document.getElementById("texto2");
+            var resposta1 = document.getElementById("resposta");
+            var nota1 = parseInt(texto1.value);
+            var nota2 = parseInt(texto2.value);
+            var media = (nota1 + nota2) /2
+        }
+
+
+
+</html>
