@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(48, 93, 131);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    flex-direction: column;
+}
