@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nome e idade</title>
+    </head>
+    <body>
+        Digite seu nome:
+        <input type="text" id="texto1"/><br/><br/>
+        Digite seu ano de nascimento:
+        <input type="text" id="texto2"/><br/><br/>
+        <input type="button" value="Frase" onclick="calcular()"/><br/><br/>
+        <div id="resp"></div>
+    </body>
+    <script>
+        function calcular(){
+            //pega elementos
+            var nome = document.getElementById("texto1");
+            var ano = document.getElementById("texto2");
+            var r = document.getElementById("resp");
+            //pega valores
+            var n1 = (nome.value);
+            var n2 = parseInt(ano.value);
+            //calcular
+            var soma = (2023 - n2);
+            //mostra o resultado
+            r.innerHTML = "Olá " + n1 + ", " + "você tem " + soma + " anos."
+        }
+        
+    </script>
+</html>

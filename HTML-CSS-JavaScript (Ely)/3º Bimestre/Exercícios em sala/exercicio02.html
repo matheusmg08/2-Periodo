@@ -1,0 +1,34 @@
+<!--Peça para o usuário digitar a largura e altura de um retangulo. Calcule e mostre sua área (largura * altura)-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Área</title>
+    </head>
+    <body>
+        <h1>Calculando Área</h1>
+        Largura:
+        <input type="text" id="larg"/><br/><br/>
+        Altura:
+        <input type="text" id="alt"/><br/><br/>
+        <input type="button" value="calcular" onclick="calcular()"/>
+        <div id="resp"></div><br/><br/>
+    </body>
+    <script>
+        function calcular(){
+            //pega elementos
+            var l = document.getElementById("larg");
+            var a = document.getElementById("alt");
+            var r = document.getElementById("resp")
+            //pega valores
+            var l1 = parseFloat(l.value);
+            var a1 = parseFloat(a.value);
+            //calcular
+            var area = (l1 * a1)
+            //mostra o resultado
+            r.innerHTML = "Área: " + area.toFixed(2);
+
+
+        }
+    </script>
+</html>
+

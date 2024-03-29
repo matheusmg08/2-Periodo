@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Select</title>  
+    </head>
+    <body>
+        <input type="text">
+        <input type="password">
+        <input type="date">
+        <input type="number">
+        <input type="checkbox" id="teste"/>
+        Sistemas <input type="radio" name="curso" id="sis">
+        Direito <input type="radio" name="curso" id="dir">
+        Odonto <input type="radio" name="curso" id="odo">
+        <hr/>
+        <select id="turno">
+            <option>noturno</option>
+            <option>diurno</option>
+        </select>
+    </body>
+    <script>
+        var s = document.getElementById("sis");
+        alert (s.checked);
+        <hr/>
+        var check = document.getElementById("teste");
+        alert (s.checked);
+        <hr/>
+        var turno = document.getElementById("turno");
+        alert(turno.options[turno.selectedIndex].text);
+    </script>
+
+</html>

@@ -1,0 +1,42 @@
+<!-- 4 – Faça um sistema para calcular o valor a ser pago por um boleto de cobrança atrasado. Para isso, peça para o usuário digitar o valor do boleto e a quantidade de dias de atraso. Deverá ser calculado 2% de multa de atraso, R$ 2,00 de despesa de cobrança e também 0,5%
+de juros ao dia.-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício 4</title>
+    </head>
+    <body>
+        <h1>Exercício 4</h1>
+        Digite o valor do boleto:
+        <input type="number" id="txt1"><br/><br/>
+        Digite a quantidade de dias de atraso:
+        <input type="number" id="txt2"><br/><br/>
+        <input type="button" value="Valor a pagar" onclick="calcular()"><br/><br/>
+        <input type="button" value="Limpar" onclick="limpar()"><br/><br/>
+        <div id="resp"></div>
+    </body>
+    <script>
+        function calcular(){
+            var t1 = document.getElementById("txt1");
+            var t2 = document.getElementById("txt2");
+            var r = document.getElementById("resp");
+            var n1 = parseFloat(t1.value);
+            var n2 = parseFloat(t2.value);
+            var juros = n1 * 0.02;
+            var dia = (n1 * 0.005) * n2;
+            var total = (juros + dia) + 2 + n1;
+            r.innerHTML = "O valor a ser pago será de: R$ " + total.toFixed(2);
+        }
+        function limpar(){
+            var t1 = document.getElementById("txt1");
+            var t2 = document.getElementById("txt2");
+            var r = document.getElementById("resp");
+            //limpa os campos
+            t1.value = "";
+            t2.value = "";
+            resp.innerHTML = "";
+            //coloca o foco no input
+            t1.focus()
+        }
+    </script>
+</html>

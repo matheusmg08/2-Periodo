@@ -1,0 +1,48 @@
+<!-- 6 - considere que um carro faz 9km/litro de consumo com alcool. Já na gasolina ele faz
+11km/litro. Faça um algoritmo em que o usuário irá digitar a distância que deseja viajar, o
+preço do alcool e o preço do litro da gasolina. Calcule e mostre o valor que será gasto caso
+abasteça com alcool e o valor gasto com gasolina -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício 6</title>
+    </head>
+    <body>
+        <h1>Exercício 6</h1>
+        Digite a distância que deseja viajar:
+        <input type="number" id="txt1"><br/><br/>
+        Digite o preço do álcool:
+        <input type="number" id="txt2"><br/><br/>
+        Digite o preço da gasolina:
+        <input type="number" id="txt3"><br/><br/>
+        <div id="resp"></div>
+        <input type="button" value="Calcular" onclick="calcular()">
+        <input type="button" value="Limpar" onclick="limpar()">
+    </body>
+    <script>
+        function calcular(){
+            var t1 = document.getElementById("txt1");
+            var t2 = document.getElementById("txt2");
+            var t3 = document.getElementById("txt3");
+            var r = document.getElementById("resp");
+            var n1 = parseFloat(t1.value);
+            var n2 = parseFloat(t2.value);
+            var n3 = parseFloat(t3.value);
+            var valor_alcool = (n1 / 9) *n2
+            var valor_gasolina = (n1 / 11) *n3
+            r.innerHTML = "O valor que será gasto caso abasteça no ácool será de R$ " + valor_alcool.toFixed(2) + " e o valor que será gasto caso abasteça na gasolina será de R$ " + valor_gasolina.toFixed(2);
+        }
+        function limpar(){
+            var t1 = document.getElementById("txt1");
+            var t2 = document.getElementById("txt2");
+            var t3 = document.getElementById("txt3");
+            var r = document.getElementById("resp");
+            t1.value = "";
+            t2.value = "";
+            t3.value = "";
+            r.innerHTML = "";
+            t1.focus()
+
+        }
+    </script>
+</html>

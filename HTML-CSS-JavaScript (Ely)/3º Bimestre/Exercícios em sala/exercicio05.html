@@ -1,0 +1,37 @@
+<!-- 5 – O tempo de gestação normalmente é calculado em semanas. Portanto, faça um algoritmo
+que peça para o usuário digitar a quantidade de semanas e mostre qual é a quantidade de
+meses e a quantidade de dias. Considere para este cálculo que todos os meses possuem 30
+dias. Exemplo: 25 semanas = 25*7 = 175dias 175/30 = 5.8 meses -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício 5</title>
+    </head>
+    <body>
+        <h1>Exercício 5</h1>
+        Digite a quantidade de semanas da gestação:
+        <input type="number" id="txt1"><br/><br/>
+        <input type="button" value="Calcular" onclick="calcular()">
+        <input type="button" value="Limpar" onclick="limpar()"><br/><br/>
+        <div id="resp"></div>
+    </body>
+    <script>
+        function calcular (){
+            var t1 = document.getElementById("txt1");
+            var r = document.getElementById("resp");
+            var n1 = parseFloat(t1.value);
+            var semana = n1 * 7;
+            var meses = semana / 30;
+            r.innerHTML = "A quantidade de dias é " + semana + " e a quantidade de meses é " + meses.toFixed(1);
+        }
+        function limpar (){
+            var t1 = document.getElementById("txt1");
+            var r = document.getElementById("resp");
+            //limpa os campos
+            t1.value = "";
+            resp.innerHTML = "";
+            //coloca o foco no input
+            t1.focus()
+        }
+    </script>
+</html>
