@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Iphone</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div class="fundo">
+            <h1 class="titulo">Casa do Iphone</h1><br>
+             <p class="texto">128Gb Meia-noite</p><br/><br/><br/>
+         <div class="borda">
+             <img class="foto" src="Imagens/iphone.png"> 
+            
+            <p class="info">Iphone 13 Apple (128gb) Meia-Noite</p>
+            <p class="info">Tela de 6,1", 5G e Câmera dupla de 12 MP</p>
+            <p class="info">Valor:
+                <span class="preco" id="valor" style="font-weight: bold;">
+                    $1.000,00
+                </span>        
+            </p><br/>
+            <p class="info">Valor com 10% de juros em 1x no cartão
+                <span class="preco" id="valor2" style="font-weight: bold;">
+                R$
+                </span>
+            </p>
+            <p class="info">ou em 6 parcelas de:
+                <span class="preco" id="parcelas" style="font-weight: bold;" >
+                </span>
+            </p><br/>
+            <p class="info">Em 24x de:
+                <span class="preco" id="valor3" style="font-weight: bold;">               
+                </span>
+            </p>
+            <p class="info">Total de:
+                <span class="preco" id="juros" style="font-weight: bold;">
+                </span>
+            </p>
+            <p class="info"></p>
+            <button class="botao">Comprar</button>
+        </div>
+        </div><br/><br/><br/><br/><br/>
+        <footer>Desenvolvido por Matheus Teixeira, Copyright ©</footer>
+    </body>
+        <script>
+            var valor = 1000;
+            var reais = valor * 5.2;
+            var tag = document.getElementById("valor");
+            tag.innerHTML = "R$" + reais.toFixed(2);
+            //calcule e mostre o preço do produto em reais
+            // dividido em 6 parcelas acrescentando 10% 
+            // de juros(mostre o valor total e o valor de cada parcela)
+            // mostre tambem o preço em 24x acrescentando 25% de juros (mostre o valor de cada parcela) 
+            var valor2 = 5200;
+            var total = (valor2 * 0.10) + valor2;
+            var tag_2 = document.getElementById("valor2");
+            tag_2.innerHTML = "R$" + total.toFixed(2);
+            //06 parcelas
+            var parcelas = (total / 6);
+            var tag_3 = document.getElementById("parcelas");
+            tag_3.innerHTML = "R$" + parcelas.toFixed(2);
+            //24 parcelas
+            var juros = (valor2 * 0.25) + valor2;
+            var valor3 = (juros / 24);
+            var tag_4 = document.getElementById("valor3");
+            tag_4.innerHTML = "R$" + valor3.toFixed(2);
+            var tag_5 = document.getElementById("juros");
+            tag_5.innerHTML = "R$" + juros.toFixed(2);
+
+        </script>
+</html>

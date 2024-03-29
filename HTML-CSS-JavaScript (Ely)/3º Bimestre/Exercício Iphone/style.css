@@ -1,0 +1,48 @@
+body{
+    background-color: aquamarine;
+}
+.texto{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    text-align: center;
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    text-align: center;
+}
+.foto{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.borda{
+    padding: 3px;
+    border: 3px #dcdee1; 
+    border-radius: 10px; 
+    margin-left: 36%;
+    border-style: solid;
+    padding: 5px;
+    width: 30%;
+}   
+.botao{
+    margin-left: 40%;
+    font-weight: bold;
+}
+.info{
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #2770d4;
+}
+footer{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 38%;
+    color: black;
+    font-weight: bold;
+}
+.preco{
+    color: black;
+    font-weight: bold;
+}
