@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8"/>
+        <title>Marcas</title>
+    </head>
+    <body>
+        <h1>Marca</h1>
+        <select id="marca" onchange="carregarProduto()">
+            <label>
+                <option>Escolha a opção</option>
+                <option>Apple</option>
+                <option>Samsung</option>
+                <option>Xiaomi</option>
+            </label>
+        </select>
+        <h1>Produto</h1>
+        <select id="prod" onchange="carregarPreco()"></select>
+        <h1>Quantidade</h1>
+        <input type="number" id="quant" required><br/><br/>
+        <input type="button" value="Calcular" onclick="calcular()">
+        <h2>Preço unitário</h2>
+        <span id="precounit">R$ 0,00</span><br/>
+        <h2>Preço Total</h2>
+        <div id="resp"></div>
+
+        <script src="exercicio01.js"></script>
+
+
+
+    </body>
+</html>
