@@ -1,0 +1,35 @@
+<!-- 1)- Implemente um sistema Web que o usuário deverá digitar dois números e selecionar qual operação deverá ser realizada (adição, subtração, multiplicação, divisão e resto). Ao selecionar a operação o sistema deverá informar qual foi a operação selecionada e qual o resultado da operação. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exercício 01</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Exercício 01</h1>
+        <h1>Digite o primeiro número:</h1>
+        <label>
+            <input type="number" id="primeiro"> 
+        </label>
+        <h1>Digite o segundo número:</h1>
+        <label>
+            <input type="number" id="segundo">
+        </label>
+        <select id="op">
+            <option>Escolha uma opção</option>
+            <option>Adição</option>
+            <option>Subtração</option>
+            <option>Multiplicação</option>
+            <option>Divisão</option>
+            <option>Resto</option>
+        </select>
+        <input type="button" onclick="calcular()" value="Calcular">
+        <input type="button" onclick="limpar()" value="Limpar">
+        <div id="resp" class="r"></div>
+        </div>
+        <script src="exercicio01.js"></script>
+        <footer>Desenvolvido por Matheus Teixeira, ©Copyright </footer>
+    </body>
+</html>
