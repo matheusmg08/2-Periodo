@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Teste de Cores</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 class="titulo">Paleta de Cores</h1>
+        <div class="bordavazada" id="bordavazada"></div>
+        <div class="coloridos">
+            <div class="bordavermelha" onclick="vermelho()"></div>
+            <div class="bordaamarela" onclick="amarelo()"></div>
+            <div class="bordaverde" onclick="verde()"></div>
+            <div class="bordaazul" onclick="azul()"></div>
+            <div class="bordapreta" onclick="preto()"></div>
+        </div>      
+    </body>
+    <script>
+        function vermelho() {
+            document.getElementById("bordavazada").style.background = "red";
+        }
+        function amarelo() {
+            document.getElementById("bordavazada").style.background = "yellow";
+        }
+        function verde() {
+            document.getElementById("bordavazada").style.background = "green";
+        }
+        function azul() {
+            document.getElementById("bordavazada").style.background = "blue";
+        }
+        function preto() {
+            document.getElementById("bordavazada").style.background = "black";
+        }
+    </script>
+</html>

@@ -1,0 +1,49 @@
+.titulo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bordavazada{
+    border: 5px;
+    border-style: solid;
+    width: 40%;
+    color: black;
+    height: 20%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.bordavermelha{
+    margin: 10px;   
+    width: 100px;
+    height: 80px;
+    background-color: red;
+}
+.bordaamarela{
+    margin: 10px;
+    width: 100px;
+    height: 80px;
+    background-color: yellow;
+}
+
+.coloridos{
+    display: flex;
+    margin-left: 31%;
+    
+}
+.bordaverde{
+    width: 100px;
+    height: 80px;
+    background-color: green;
+    margin: 10px;
+}
+.bordaazul{
+    margin: 10px;
+    width: 100px;
+    height: 80px;
+    background-color: blue;
+}
+.bordapreta{
+    margin: 10px;
+    width: 100px;
+    height: 80px;
+    background-color: black;
+}
